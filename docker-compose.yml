@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: knowledge_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: knowledge_db
+    ports:
+      - "3306:3306"
